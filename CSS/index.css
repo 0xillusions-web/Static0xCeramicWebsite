@@ -1,0 +1,175 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 62.5%;
+  font-family: 'Space Mono', 'Courier New', Courier, monospace;
+  cursor: pointer;;
+}
+
+
+
+h1 {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+h2 {
+  font-size: 1.8rem;
+}
+
+h3 {
+  font-size: 1.6rem;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+ul {
+  list-style: none;
+}
+
+
+/* Header Styles */
+header {
+  padding: 2rem 1rem;
+}
+
+nav > *, .nav-unordered-list > li {
+  display: inline-block;
+}
+
+.nav-unordered-list{
+  margin-left: 4rem;
+}
+
+.nav-link {
+  font-size: 1.6rem;
+  padding: 0rem 1rem;
+}
+
+.nav-link:first-child{
+  border-bottom: 2px solid rgb(20, 8, 8);
+}
+
+/* Ceramic Section */
+
+.ceramic-section {
+  padding: 2%;
+}
+
+.ceramic-section *{
+  font-size: 0;
+}
+
+.ceramic-headline {
+  font-size: 2rem;
+  font-weight: 400;
+  line-height: 6;
+  text-align: center;
+}
+
+
+.ceramic-container{
+  display: inline-block;
+  font-size: 1rem;
+  text-align: center;
+  width: calc((50% - 1rem)); 
+  padding: 1rem;
+  margin : 1rem 0.5rem;
+
+}
+
+.ceramic-img-container{
+  display: inline-block;
+  border-radius: 1rem;
+  width: 40vw;
+  max-width: 65rem;
+  height: 40vh;
+  max-height: 40rem;
+}
+
+.ceramic-img {
+  border-radius: inherit;
+  filter: contrast(1.1);
+  object-fit: cover;
+  aspect-ratio: 16/9;
+  width: 100%;
+  height: 100%;
+}
+
+.ceramic-para {
+  font-size: 1.6rem;
+  line-height: 3;
+}
+
+.ceramic-img:hover {
+  filter:contrast(1);
+  opacity: 0.9;
+}
+
+/* Thought Section */
+
+
+.thought-container > * {
+  margin: 2rem 5%;
+}
+
+.thought-para {
+  font-size: 3rem;
+}
+
+.thought-button{
+  font-size: 1.8rem;
+  font-family: inherit;
+  line-height: 1.5;
+  border: none;
+  border-bottom: 0.2rem solid rgb(0, 0, 0);
+
+  background:transparent;
+}
+
+/* footer styles */
+
+footer {
+  font-size: 1.5rem;
+  background-color: rgba(243, 241, 241,0.4);
+  padding: 3rem;
+  margin-top: 10%;
+}
+
+.footer-para {
+  font-size: 1.2rem;
+  line-height: 8;
+  text-align: center;
+}
+
+
+@media screen and (max-width: 600px) {
+  .nav-unordered-list {
+    margin: 0;
+  }
+
+  nav > * {
+    display: block;
+    text-align: center;
+    margin-bottom: 2remf;
+  }
+
+  .nav-link {
+    padding: 1rem;
+  }
+
+  
+
+}
